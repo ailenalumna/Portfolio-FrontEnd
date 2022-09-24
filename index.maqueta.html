@@ -60,7 +60,7 @@
     </div>
   </div>
 </div>
-</div>
+<!--</div> que esta demas me parece--> 
 </header>
 <!--Carousel-->
 <section id="carousel" class="carousel">
@@ -118,14 +118,14 @@
         <div class="row p-3">
           <div class="col-3">
               <!--Foto perfil-->
-              <img src="assets/img/foto user.jpg" class="rounded-circle w-75" alt="" title="" >           
-              <buton type="submit" class="btn btn-close-black"><i class="fa-solid fa-pen"></i></button>
+              <img src="assets/img/foto user.jpg" class="rounded-circle w-75" alt="" title="">          
+              <button type="submit" class="btn btn-close-blacksobreMi"><i class="fa-solid fa-pen"></i></button>
               <h2 class="nombrePerfil"> Ailén Torres</h2> 
               <h6>Programador Web Full Stack Jr.</h6>
             </div> 
               <div class="col-8 text-md-start">   
               <h2 class="acercademi">Acerca de mi</h2>
-              <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dicta nobis eos! Tempore eius amet at, molestias veniam repellat reprehenderit architecto sunt. Cumque recusandae eius odit enim vel fuga explicabo.</h5>
+              <h6>Mi nombre es Ailén, actualmente soy niñera, nunca estudié ni trabajé en el ámbito de la programación, es todo nuevo para mi. De hecho estudié y me faltan materias de Bibliotecología (bibliotecaria) osea nada que ver, pero mi hermana y cuñado son licenciados en sistemas y me dijeron que parecia copado el programa asi que me anoté, más que nada para tener en el dia de mañana un trabajo  estable, de calidad ya que trabajo en negro</h6>
             </div>      
         </div>
       </div>
@@ -133,11 +133,73 @@
           <!--seccion experiencia-->
         <section id="experiencia" class="experiencia">
           <div class="container-fluid text-center rounded shadow-sm p-3 bg-body-transparent">
-          <div class="col-6 mt-5">
-              <h2>Experiencia</h2>
-              <buton type="submit" class="btn btn-close-black"><i class="fa-solid fa-pen"></i></button>
-                <br>              
+          <div class="col-6">
+            <h2>Experiencia</h2>
+            <div class="container text-center">
+              <div class="row">
+                
+                <div class="col-3">           
                 </div>
+                <div class="col-sm-8">   
+                </div>
+                <div class="col-1">
+                  <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#editarModal"></i></button><br>
+                  <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#agregarModal"></i></button><br>
+                  <button type="submit" class="btn btn-close-black"><i class="fa-sharp fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#eliminarModal"></i></button><br>
+                    <br> 
+                </div>
+                <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="mb-3">
+                        <input class="form-control form-control-m" id="formFileSm" type="text">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="modal fade" id="agregarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Agregar información adicional</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="mb-3">
+                        <input class="form-control form-control-m" id="formFileSm" type="text">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¿Estás seguro que quiere eliminar?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="mb-3">
+                        <input class="form-control form-control-m" id="formFileSm" type="text">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>                          
+                </div>                           
              </div>   
         </section>  
         <section id="educacion" class="educacion">
@@ -147,7 +209,7 @@
             <br>
             <div class="container text-center">
               <div class="row">
-                <div class="col-2">       
+                <div class="col-3">    
                 </div>
                 <div class="col-8">
                   <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
@@ -169,8 +231,11 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-1">   
-                  <h4 class="mt-6 pt-5"><strong>Cursos realizados:</strong>#séProgramar de Argentina Programa</h4>       
+                <div class="col-1"> 
+                  <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-pen"></i></button><br>  
+                  <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-plus"></i></button><br>
+                  <button type="submit" class="btn btn-close-black"><i class="fa-sharp fa-solid fa-trash"></i></button><br>
+                  <h4><strong>Cursos realizados:</strong>#séProgramar de Argentina Programa</h4>       
                 </div>
               </div>
             </div>        
@@ -179,7 +244,7 @@
           </section>     
         <section id="habilidades" class="habilidades">
           <div class="container-fluid text-center rounded shadow-sm p-3 bg-body-transparent">
-          <div class="col-6 mt-5">
+          <div class="col-8 mt-5">
             <h2 class="text-center">Hard & soft skills</h2>
             <div class="progress mt-4">
                <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">JavaScript
@@ -202,16 +267,46 @@
               </div>
             </div><br>
           </div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-close-blackhab"><i class="fa-solid fa-pen"></i></button><br>  
+            <button type="submit" class="btn btn-close-blackhab"><i class="fa-solid fa-plus"></i></button><br>
+            <button type="submit" class="btn btn-close-blackhab"><i class="fa-sharp fa-solid fa-trash"></i></button><br>
+          </div>
           </div>
         </section>
         
         <section id="proyectos" class="proyectos">
           <div class="container-fluid text-center rounded shadow-sm p-3 bg-body-transparent">
-          <div class="col-6 mt-4">
-            <h2 class="text-center">Proyectos</h2>
-            <p>Portfolio web Argentina Programa 2022</p>
-          </div>
-          </div>
+            <div class="col-6">
+              <h2>Proyectos</h2>
+              <div class="container text-center">
+                <div class="row">
+                  
+                  <div class="col-3">
+              
+                  </div>
+                  <div class="col-sm-8">
+                   
+                  </div>
+                  <div class="col-1">
+                    <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-pen"></i></button><br>
+                    <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-plus"></i></button><br>
+                    <button type="submit" class="btn btn-close-black"><i class="fa-sharp fa-solid fa-trash"></i></button><br>
+                      <br> 
+                  </div>
+                </div>
+              </div>
+                             
+                  </div>
+                             
+               </div>
+
+
+
+
+
+
+        
         </section>
         <section id="footer" class="footer"></section>
 <br>
