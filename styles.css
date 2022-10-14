@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Combo&display=swap');
+*{
+    font-family: 'Aref Ruqaa Ink', serif;
+ 
+
+}
+/*banner*/
+body{
+  background-image: url(../img/acuarelas.jpg);
+  margin: 1rem; 
+}
+
+/*barra de navegación*/
+.navbar.navbar-expand-lg.bg-secondary{
+    background-color: rgb(221, 190, 250) !important;
+
+}
+
+i.fa-brands.fa-linkedin.fa-xl:hover{
+ color:#0059ff ;   
+}
+i.fa-brands.fa-instagram.fa-xl:hover{
+    color:#f09df3 ;   
+   }
+i.fa-brands.fa-github.fa-xl:hover{
+    color:rgb(253, 251, 251) ;   
+   }
+.list-group-item{
+--bs-list-group-bg: transparent;
+border: none;
+}
+/*seccion sobre mi*/
+.sobreMi{
+    color: black;
+    margin: 1rem;
+    margin-top: 1rem;
+    border-style: double;
+    border-color:rgb(172, 113, 167)
+}
+/*seccion experiencia*/
+.experiencia{
+    margin: 1rem;
+    margin-top: 1rem;
+    border-style: double;
+    border-color:rgb(172, 113, 167)
+}
+/*seccion educacion*/
+.educacion{
+   margin: 1rem;
+   border-style: double;
+   border-color:rgb(172, 113, 167)
+}
+
+/*seccion habilidades*/
+.habilidades{
+   margin: 1rem;
+   border-style: double;
+   border-color:rgb(172, 113, 167)
+}
+/*seccion proyectos*/
+.proyectos{
+    margin: 1rem;
+    border-style:double;
+    border-color:rgb(172, 113, 167)
+}
+
+/*dashboard y tab*/
+section.dashboard{
+    margin-top:auto;
+}
+.nav.flex-column.nav-pills.me-3{
+    --bs-nav-pills-link-active-bg: violet;
+}
+a, a:hover{
+    color: black; 
+    display:inline-block;
+ text-decoration: none;
+}
+
+.nav-link{
+    
+    --bs-nav-link-color: black; 
+    display:inline-block;
+ 
+}
+.nav{
+    --bs-nav-link-hover-color:black; 
+}
+.nav-pills{
+        --bs-nav-pills-link-active-color:black; 
+       
+}
+/*seccion login*/
+.login{
+    height: 75vh;
+}
+.formulario-login{
+    margin-top: 12%;
+}
+/*panel
+.admin{
+    font-size: 1.5rem;
+
+}*/
+.link{
+    text-decoration: none;
+    color: #000;
+}
+.progress-bar{
+    background-color: #000;
+    background-image: none;
+    text-align: center;
+    --bs-progress-height: 1.5rem;
+}
+/*botones de edicion,eliminar,plus de exp*/
+.btn.btn-close-black{
+    margin-right: -75rem;
+  
+}
+
+.btn.btn-close-blackhab{
+    margin-top: -20rem;
+    margin-right: -125rem;
+
+}
+.btn.btn-close-blackedu{
+    margin-top: -25rem;
+    margin-right: -75rem ;
+}
+/*panel nuevo*/
+nav.vertical{
+    float: left;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem ;
+   
+}
+li.vertical{
+display: block;
+margin: 0;
+writing-mode: vertical;
+padding: 1.5rem 0 ;
+justify-content: center;
+display: flex;
+}
+
+/*footer.bg-black{
+  
+    position: fixed;
+    bottom: 0;
+}*/
+
